@@ -1,6 +1,9 @@
 ﻿  main.cpp
-c:\users\андрій\onedrive\github\sorting_algorithms\mvs\mvs\main.cpp(9): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\андрій\onedrive\github\sorting_algorithms\mvs\mvs\main.cpp(65): warning C4244: 'initializing': conversion from 'clock_t' to 'float', possible loss of data
-c:\users\андрій\onedrive\github\sorting_algorithms\mvs\mvs\main.cpp(80): warning C4244: 'initializing': conversion from 'clock_t' to 'float', possible loss of data
-  MVS.vcxproj -> C:\Users\Андрій\OneDrive\GitHub\Sorting_algorithms\MVS\Debug\MVS.exe
-  MVS.vcxproj -> C:\Users\Андрій\OneDrive\GitHub\Sorting_algorithms\MVS\Debug\MVS.pdb (Full PDB)
+d:\sorting_algorithms\mvs\mvs\main.cpp(9): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\sorting_algorithms\mvs\mvs\main.cpp(67): warning C4244: 'initializing': conversion from 'clock_t' to 'float', possible loss of data
+d:\sorting_algorithms\mvs\mvs\main.cpp(82): warning C4244: 'initializing': conversion from 'clock_t' to 'float', possible loss of data
+d:\sorting_algorithms\mvs\mvs\main.cpp(11): warning C4101: 'choise': unreferenced local variable
+  functions.cpp
+  Generating Code...
+  MVS.vcxproj -> D:\Sorting_algorithms\MVS\Debug\MVS.exe
+  MVS.vcxproj -> D:\Sorting_algorithms\MVS\Debug\MVS.pdb (Full PDB)

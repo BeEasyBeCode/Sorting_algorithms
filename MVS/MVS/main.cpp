@@ -11,24 +11,24 @@ void main()
 	char choise;
 	while (true)
 	{
-		cout « "Choose size: " « endl;
-		cout « "1: 10000" « endl;
-		cout « "2: 20000" « endl;
-		cout « "3: 50000" « endl;
+		cout << "Choose size: " << endl;
+		cout << "1: 10000" << endl;
+		cout << "2: 20000" << endl;
+		cout << "3: 50000" << endl;
 
 		int size;
-		cin » size;
+		cin >> size;
 
 		char choise;
 
-		cout « "Which sort method do you want?" « endl;
-		cout « "1: BSort" « endl;
-		cout « "2: BSort2" « endl;
-		cout « "3: InsertionSort" « endl;
-		cout « "4: QuickSort" « endl;
-		cout « "0: Exit" « endl;
+		cout << "Which sort method do you want?" << endl;
+		cout << "1: BSort" << endl;
+		cout << "2: BSort2" << endl;
+		cout << "3: InsertionSort" << endl;
+		cout << "4: QuickSort" << endl;
+		cout << "0: Exit" << endl;
 
-		cin » choise;
+		cin >> choise;
 
 		switch (size)
 		{
@@ -58,7 +58,7 @@ void main()
 
 		default:
 		{
-			cout « "Invalid choise!" « endl;
+			cout << "Invalid choise!" << endl;
 			return;
 		} break;
 		}
@@ -82,9 +82,9 @@ void main()
 		float end_time = clock();
 		float search_time = end_time - start_time;
 
-		cout « "\nChas sortuvannya: " « search_time / CLOCKS_PER_SEC « "\n";
-		cout « "Do you want to look at another method? Y/N \n";
-		cin » choise;
+		cout << "\nChas sortuvannya: " << search_time / CLOCKS_PER_SEC << "\n";
+		cout << "Do you want to look at another method? Y/N \n";
+		cin >> choise;
 		if (choise == 'Y' || choise == 'y')
 		{
 
