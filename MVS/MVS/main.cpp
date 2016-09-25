@@ -8,37 +8,39 @@ void main()
 	long Array[N];
 	srand(time(0));
 	long Size[3] = { 10000, 20000, 50000 };
-
-	cout << "Choose size: " << endl;
-	cout << "1: 10000" << endl;
-	cout << "2: 20000" << endl;
-	cout << "3: 50000" << endl;
-
-	int size;
-	cin >> size;
-
-	int choise;
-
-	cout << "Which sort method do you want?" << endl;
-	cout << "1: BSort" << endl;
-	cout << "2: BSort2" << endl;
-	cout << "3: InsertionSort" << endl;
-	cout << "4: QuickSort" << endl;
-	cout << "0: Exit" << endl;
-
-	cin >> choise;
-
-	switch (size)
+	char choise;
+	while (true)
 	{
+		cout « "Choose size: " « endl;
+		cout « "1: 10000" « endl;
+		cout « "2: 20000" « endl;
+		cout « "3: 50000" « endl;
+
+		int size;
+		cin » size;
+
+		char choise;
+
+		cout « "Which sort method do you want?" « endl;
+		cout « "1: BSort" « endl;
+		cout « "2: BSort2" « endl;
+		cout « "3: InsertionSort" « endl;
+		cout « "4: QuickSort" « endl;
+		cout « "0: Exit" « endl;
+
+		cin » choise;
+
+		switch (size)
+		{
 		case 1:
 		{
 			for (i = 0; i < N; ++i)
 			{
 				Array[i] = rand() % Size[0];
-			}	
+			}
 		} break;
 
-		case 2: 
+		case 2:
 		{
 			for (i = 0; i < N; ++i)
 			{
@@ -46,7 +48,7 @@ void main()
 			}
 		} break;
 
-		case 3: 
+		case 3:
 		{
 			for (i = 0; i < N; ++i)
 			{
@@ -56,16 +58,16 @@ void main()
 
 		default:
 		{
-			cout << "Invalid choise!" << endl;
+			cout « "Invalid choise!" « endl;
 			return;
 		} break;
-	}
-	
+		}
 
-	float start_time = clock();
+		PrintArray(Array, N);
+		float start_time = clock();
 
-	switch (choise)
-	{
+		switch (choise)
+		{
 		case 1: BSort(Array, N); break;
 
 		case 2: BSort2(Array, N); break;
@@ -75,12 +77,24 @@ void main()
 		case 4: QSort(Array, 0, N - 1); break;
 
 		case 0: return; break;
-	}
-	
-	float end_time = clock();
-	float search_time = end_time - start_time;
+		}
+		PrintArray(Array, N);
+		float end_time = clock();
+		float search_time = end_time - start_time;
 
-	cout << "Chas sortuvannya: " << search_time / CLOCKS_PER_SEC << "\n";
-	
-	system("pause>>void");
+		cout « "\nChas sortuvannya: " « search_time / CLOCKS_PER_SEC « "\n";
+		cout « "Do you want to look at another method? Y/N \n";
+		cin » choise;
+		if (choise == 'Y' || choise == 'y')
+		{
+
+		}
+		else
+		{
+			system("pause");
+			return;
+		}
+	}
+
+	system("pause");
 }
